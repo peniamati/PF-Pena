@@ -1,0 +1,121 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Calibri,Arial, Helvetica, sans-serif;
+}
+
+header{
+  background-color: #fa7aa3;
+  text-align: center;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  .logo-der{
+    display: none;
+  }
+
+  .h1{
+    margin-top: 1rem;
+    vertical-align: middle;
+    font-size: 1.8rem;
+    font-family: Brush Script MT,Arial, Helvetica, sans-serif;
+  }
+
+  .logo-izq{
+    width: 40%;
+  }
+
+  .welcome{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  .bienvenidos{
+    font-size: 2rem;
+    font-family: Brush Script MT,Arial, Helvetica, sans-serif;
+  }
+
+  .intro{
+    width: 70%;
+  }
+
+  .intro-img{
+    width: 100%;
+  }
+
+  .intro-img-right{
+    width: 100%;
+  }
+
+  .agend-class{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .container-calendar{
+    width: 70%;
+  }
+
+  .calendar{
+    width: 100%;
+  }
+  
+  .footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: black;
+    color:#fa7aa3;
+  }
+
+
+
+
+
+
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+  header {
+      background-color: yellow;
+  }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+  body {
+      background-color: blue;
+  }
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px){
+  body {
+      background-color: green;
+  }
+}
+
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+  body {
+      background-color: white;
+  }
+}
