@@ -20,7 +20,7 @@
     </a>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="./index.html">
           <img src="./images/jardin-mariposas-logo.jpg" width="40" height="40" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -69,11 +69,16 @@
     </section>
 
     <section class="agend-class">
-      <article class="container-calendar">
+      <article class="article-calendar">
         <h2>Agenda tu clase</h2>
-        <iframe class="calendar"
-          src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FArgentina%2FBuenos_Aires&src=OWQ5NWRkOGM2ZTRjMzM2NDJmOWMwYzJhMGIyZDM2OTgyMWU0MjhkYmE4MGQ4MDc1MjAyZWZiMDAzY2I3N2Y0NkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZXMuYXIjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23EF6C00&color=%237986CB"
-          style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        <div class="container-calendar">
+          <iframe class="calendar"
+                  src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FArgentina%2FBuenos_Aires&src=OWQ5NWRkOGM2ZTRjMzM2NDJmOWMwYzJhMGIyZDM2OTgyMWU0MjhkYmE4MGQ4MDc1MjAyZWZiMDAzY2I3N2Y0NkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZXMuYXIjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23EF6C00&color=%237986CB"
+                  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+                  frameborder="0" scrolling="no">
+          </iframe>
+        </div>
+        
         <p class="class-day">
           Las clases se dictaran los dias lunes, miercoles y viernes
           entre las 18 y 20 horas. La disponibilidad esta sujeta a posibles
@@ -92,11 +97,7 @@
   </main>
 
   <footer class="footer">
-    <div class="h3-logo">
-      <h3 class="footer-h3">EJDM</h3>
-      <img class="footer-logo" src="./images/jardin-mariposas-logo.jpg" alt="Logo de El Jardin de Mariposas">
-    </div>
-    <div>
+    <div class="footer-container">
       <nav class="footer-nav">
         <ul>
           <li><a href="./pages/galery.html">GALERIA</a></li>
@@ -111,6 +112,10 @@
       <a class="facebook" href="https://www.facebook.com/"><button><i class="bi bi-facebook"></i> Facebook</button></a>
       <a class="instagram" href="https://www.instagram.com/"><button><i class="bi bi-instagram"></i>Instagram</button></a>
       <a class="whatsapp" href="https://www.whatsapp.com/"><button><i class="bi bi-whatsapp"></i>Whatsapp</button></a>
+    </div>
+    <div class="h3-logo">
+      <h3 class="footer-h3">EJDM</h3>
+      <img class="footer-logo" src="./images/jardin-mariposas-logo.jpg" alt="Logo de El Jardin de Mariposas">
     </div>
   </footer>
 
