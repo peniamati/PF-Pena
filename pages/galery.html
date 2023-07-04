@@ -10,21 +10,53 @@
   <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-  <header>
-    <a href="../index.html">
-      <img src="../images/mariposa-logo.png" alt="Logo de El Jardin de Mariposas">
-      <h1>El jardin de Mariposas</h1>
-      <img src="../images/mariposa-logo.png" alt="Logo de El Jardin de Mariposas">
-    </a>
+  <header class="header">
+    <div class="container-logo-izq">
+      <a class="a-logo-izq" href="../index.html">
+        <img class="logo-izq" src="../images/jardin-mariposas-logo.jpg" alt="Logo de El Jardin de Mariposas">
+      </a>
+    </div>
+    <div class="container-h1">
+      <a class="header-a" href="../index.html">
+        <h1 class="h1">EL JARDIN DE MARIPOSAS</h1>
+      </a>
+    </div>
+    <div class="container-logo-der">
+      <a class="a-logo-der" href="../index.html"> 
+        <img class="logo-der" src="../images/jardin-mariposas-logo.jpg" alt="Logo de El Jardin de Mariposas">
+      </a>
+    </div>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../images/jardin-mariposas-logo.jpg" width="40" height="40" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./about-me.html">SOBRE MI</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about-yoga.html">SOBRE YOGA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./materiales.html">MATERIALES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact-me.html">CONTACTAME</a>
+            </li>
+          </ul>
 
-    <nav class="navigation">
-      <ul>
-      <li><a href="./about-yoga.html">SOBRE YOGA</a></li>
-      <li><a href="./about-me.html">SOBRE MI</a></li>
-      <li><a href="./materiales.html">MATERIALES</a></li>
-      <li><a href="./contact-me.html">CONTACTO</a></li>
-      </ul>
+        </div>
+        <a class="navbar-brand me-0 nav-logo-right" href="../index.html">
+          <img src="../images/jardin-mariposas-logo.jpg" width="40" height="40" alt="">
+        </a>
+      </div>
     </nav>
+    
   </header>
 
   <main>
@@ -44,16 +76,28 @@
     </section>
   </main>
 
-  <footer>
-    <div>
-        <a href="https://www.facebook.com/"><button><i class="bi bi-facebook"></i> Facebook</button></a>
-        <a href="https://www.instagram.com/"><button><i class="bi bi-instagram"></i>Instagram</button></a>
-        <a href="https://www.whatsapp.com/"><button><i class="bi bi-whatsapp"></i>Whatsapp</button></a>
+  <footer class="footer">
+    <div class="footer-container">
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="./about-yoga.html">SOBRE YOGA</a></li>
+          <li><a href="./about-me.html">SOBRE MI</a></li>
+          <li><a href="./materiales.html">MATERIALES</a></li>
+          <li><a href="./contact-me.html">CONTACTO</a></li>
+        </ul>
+      </nav>
     </div>
-    <div>
-      <h3>EJDM</h3>
-      <img src="../images/mariposa-logo.png" alt="Logo de El Jardin de Mariposas">
+    <div class="footer-a">
+      <a class="facebook" href="https://www.facebook.com/"><button><i class="bi bi-facebook"></i> Facebook</button></a>
+      <a class="instagram" href="https://www.instagram.com/"><button><i class="bi bi-instagram"></i>Instagram</button></a>
+      <a class="whatsapp" href="https://www.whatsapp.com/"><button><i class="bi bi-whatsapp"></i>Whatsapp</button></a>
+    </div>
+    <div class="h3-logo">
+      <img class="footer-logo" src="../images/jardin-mariposas-logo.jpg" alt="Logo de El Jardin de Mariposas">
     </div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
 </body>
 </html>
