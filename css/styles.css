@@ -29,6 +29,7 @@ a{
 
 .navbar{
   width: 100%;
+  text-align: center;
 }
 
 .bienvenidos{
@@ -146,8 +147,8 @@ a{
 }
 
 .nav-logo-right{
-  display: none;
-}
+    display: none;
+  }
 
 
 
