@@ -89,9 +89,14 @@ a{
 
 .container-calendar {
   position: relative;
-  padding-bottom: 75%; /* Adjust this value for desired aspect ratio */
-  height: 0;
+  padding-bottom: 100%;
   margin-bottom: 1rem;
+}
+
+
+td #timezone{
+  height: 0;
+  overflow: hidden;
 }
 
 .calendar {
@@ -102,7 +107,6 @@ a{
   height: 100%;
   border: none; /* Remove the iframe border */
 }
-
 
 .footer{
   width: 100%;
