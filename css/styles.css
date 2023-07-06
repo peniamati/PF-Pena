@@ -170,19 +170,18 @@ td #timezone{
 
   .whatsapp-section{
     position: fixed;
+    width: 5%;
+    bottom: 10px;
     right: 0;
-    bottom: 0;
   }
 
-  .whatsapp-logo{
-    position: inherit;
-    height: 5%;
-    right: 0;
-    bottom: 10px;
+   .whatsapp-logo{
+    width: 100%;
   }
+  
 
   .whatsapp-expand{
-    position: fixed;
+    position: inherit;
     right: 0;
     bottom: 0;
     display: none;
@@ -201,6 +200,14 @@ td #timezone{
 
 /* Media Query for Tablets Ipads portrait mode */
 @media (min-width: 768px){
+
+  body{
+    background-color: #ffe0e9;
+  }
+
+  .main{
+    padding: 1rem;
+  }
 
   .nav-logo-right{
     display: block;
@@ -304,22 +311,22 @@ td #timezone{
 
   .whatsapp-section{
     position: fixed;
+    width: 5%;
+    bottom: 10px;
     right: 0;
-    bottom: 0;
   }
 
-  .whatsapp-logo{
-    position: inherit;
-    height: 10%;
-    right: 0;
-    bottom: 10px;
+   .whatsapp-logo{
+    width: 100%;
   }
+  
 
   .whatsapp-expand{
-    position: fixed;
+    position: inherit;
     right: 0;
     bottom: 0;
     display: none;
+    font-size: 0.8em;
   }
 
   .whatsapp-section:hover .whatsapp-expand{
