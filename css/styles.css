@@ -68,7 +68,7 @@ a{
 }
 
 .intro{
-  width: 70%;
+  width: 80%;
 }
 
 .intro-img{
@@ -88,7 +88,7 @@ a{
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  width: 70%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -170,32 +170,84 @@ td #timezone{
 
   .whatsapp-section{
     position: fixed;
-    width: 5%;
+    width: 7%;
     bottom: 10px;
-    right: 0;
+    right: 10px;
   }
 
-   .whatsapp-logo{
+  .whatsapp-expand{
+    display: none;
+  }
+
+  .whatsapp-logo{
     width: 100%;
   }
   
-
-  .whatsapp-expand{
-    position: inherit;
-    right: 0;
-    bottom: 0;
-    display: none;
-    font-size: 0.8em;
+  .recursos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
   }
 
-  .whatsapp-section:hover .whatsapp-expand{
-    display: block;
+  .recursos-h2{
+    justify-self: center;
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-family: Brush Script MT,Arial, Helvetica, sans-serif;
   }
 
-  .whatsapp-section:hover .whatsapp-logo{
-    display: none;
+  .recursos-article{
+    width: 80%;
+  }
+  .recursos-article-img{
+    width: 100%;
+    margin-bottom: 1rem;
   }
 
+  .recursos-article-ul{
+    padding: 0;
+  }
+
+  .recursos-article-ul-li{
+    list-style: decimal;
+    text-align: start;
+  }
+
+  .videos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .videos-video{
+    width: 80%;
+  }
+
+  .videos-video{
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .aside{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .aside-spotify{
+    width: 80%;
+  }
+
+
+  .aside-spotify-iframe{
+    width: 100%;
+  }
 
 
 /* Media Query for Tablets Ipads portrait mode */
@@ -313,17 +365,17 @@ td #timezone{
     position: fixed;
     width: 5%;
     bottom: 10px;
-    right: 0;
+    right: 10px;
   }
 
-   .whatsapp-logo{
+  .whatsapp-logo{
     width: 100%;
   }
   
 
   .whatsapp-expand{
     position: inherit;
-    right: 0;
+    right: 10px;
     bottom: 0;
     display: none;
     font-size: 0.8em;
