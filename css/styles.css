@@ -12,6 +12,10 @@ header{
   background-color: #fa7aa3;
 }
 
+body{
+  background-color: #ffe0e9;
+}
+
 a{
   text-decoration: none;
   color: white;
@@ -55,7 +59,9 @@ a{
   justify-content: center;
   text-align: center;
 }
+
 .bienvenidos{
+  justify-self: center;
   margin-top: 1rem;
   font-size: 2rem;
   font-family: Brush Script MT,Arial, Helvetica, sans-serif;
@@ -154,6 +160,43 @@ td #timezone{
     display: none;
   }
 
+  .nav-link{
+    color: white;
+  }
+  .nav-link:hover{
+    background-color: #fa7aa3;
+    color: white;
+  }
+
+  .whatsapp-section{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+  }
+
+  .whatsapp-logo{
+    position: inherit;
+    height: 5%;
+    right: 0;
+    bottom: 10px;
+  }
+
+  .whatsapp-expand{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    display: none;
+    font-size: 0.8em;
+  }
+
+  .whatsapp-section:hover .whatsapp-expand{
+    display: block;
+  }
+
+  .whatsapp-section:hover .whatsapp-logo{
+    display: none;
+  }
+
 
 
 /* Media Query for Tablets Ipads portrait mode */
@@ -203,6 +246,7 @@ td #timezone{
     padding: 1rem;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 0;
   }
   .bienvenidos{
     margin-top: 0;
@@ -216,7 +260,7 @@ td #timezone{
     display: inline-flex;
     grid-column: span 2;
     margin-bottom: 1rem;
-    width: 100%;
+    width: 80%;
   }
 
   .intro-img{
@@ -236,7 +280,7 @@ td #timezone{
   }
 
   .agend-class{
-    width: 100%;
+    width: 80%;
     text-align: start;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -258,5 +302,32 @@ td #timezone{
     text-align: center;
   }
 
+  .whatsapp-section{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+  }
+
+  .whatsapp-logo{
+    position: inherit;
+    height: 10%;
+    right: 0;
+    bottom: 10px;
+  }
+
+  .whatsapp-expand{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    display: none;
+  }
+
+  .whatsapp-section:hover .whatsapp-expand{
+    display: block;
+  }
+
+  .whatsapp-section:hover .whatsapp-logo{
+    display: none;
+  }
 }
 
