@@ -1,0 +1,64 @@
+header {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: $c-fondo;
+  & a{
+    @if lightness($c-fondo) > 50{
+      color: black;
+    }
+    @else{
+      color: white;
+    }
+  }
+}
+
+/* -------- Header styles ----------*/
+.header-container-logo-der {
+  display: none;
+}
+
+.header-container-h1 {
+  vertical-align: middle;
+  font-size: 1.8rem;
+  font-family: Brush Script MT, Arial, Helvetica, sans-serif;
+}
+
+.header-container-logo-izq {
+  padding: 2rem;
+}
+
+.header-container-logo-izq-img {
+  width: 100px;
+}
+
+@media (min-width: 768px){
+  header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: $c-fondo;
+    justify-content: space-evenly;
+  }
+
+  .header-container-logo-izq {
+    display: inline-flex;
+    padding: 2rem;
+  }
+
+  .header-container-h1 {
+    display: inline-flex;
+  }
+
+  .header-container-logo-der {
+    padding: 2rem;
+    display: inline-flex;
+  }
+
+  .header-container-logo-der-img {
+    display: inline-flex;
+    width: 100px;
+    height: 100px;
+  }
+}

@@ -1,0 +1,21 @@
+/* --------NavBar styles ----------*/
+
+.navbar {
+  width: 100%;
+  text-align: center;
+}
+
+.nav-logo-right {
+  display: none;
+}
+
+.nav-link.active:hover{
+  background-color: $c-fondo;
+  color: black;
+}
+
+@media (min-width: 768px){
+  .nav-logo-right {
+    display: block;
+  }
+}

@@ -1,0 +1,135 @@
+/* --------About Yoga styles ----------*/
+
+.introduccion {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  &-h2{
+    width: 100%;
+  }
+  &-article{
+    width: 80%;
+    &-p{
+      width: 100%;
+    }
+    &-img{
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.kids {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  &-h2{
+    width: 100%;
+  }
+  &-article{
+    width: 80%;
+    &-p{
+      width: 100%;
+    }
+    &-img{
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.benefits {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  &-h2{
+    width: 100%;
+  }
+  &-article{
+    width: 80%;
+    &-p{
+      width: 100%;
+    }
+    &-ul{
+      text-align: start;
+      width: 100%;
+    }
+    &-img{
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+@media (min-width: 768px){
+  .introduccion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    padding: 1rem;
+    padding-bottom: 0;
+    &-h2{
+      grid-column: span 2;
+    }
+    &-article{
+      grid-column: span 2;
+      display: inline-flex;
+      justify-self: center;
+      align-items: center;
+      &-p-container{
+        width: 100%;
+        margin: 1rem;
+      }
+    }
+  }
+
+  .kids {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    padding: 1rem;
+    padding-bottom: 0;
+    &-h2{
+      grid-column: span 2;
+    }
+    &-article{
+      grid-column: span 2;
+      display: inline-flex;
+      justify-self: center;
+      align-items: center;
+      &-p-container{
+        margin: 1rem;
+        width: 100%;
+      }
+    }
+  }
+
+  .benefits-article {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr;
+    grid-gap: 20px;
+    &-p-container{
+      grid-column: 1 / 3;
+    }
+    &-ul{
+      grid-column: 1;
+      grid-row: 2;
+    }
+    &-img{
+      width: 130px;
+      grid-column: 2;
+      grid-row: 2;
+    }
+    &-p:last-of-type{
+      grid-column: 1 / 3;
+      grid-row: 3;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+button{
+  background-color: $c-fondo-alt;
+  color: $c-fondo;
+  border: 0;
+  &:hover{
+    background-color: $c-fondo;
+    color: $c-fondo-alt;
+  }
+}

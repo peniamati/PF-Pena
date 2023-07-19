@@ -1,0 +1,60 @@
+/* -------- Footer styles ----------*/
+
+footer {
+  width: 100%;
+  margin-top: 10px;
+  display: inline-flex;
+  flex-wrap: nowrap;
+  background-color: $c-fondo-alt;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+  border-top: 1px solid black;
+  & li a{
+    color: $c-fondo;
+    &:hover{
+      background-color: $c-fondo;
+      color: black;
+    }
+  }
+}
+
+.footer-container {
+  margin-top: 10px;
+}
+
+.footer-logo {
+  width: 33%;
+  height: 70%;
+}
+
+.footer-logo-img {
+  width: 100px;
+}
+
+.footer-container,
+.footer-a {
+  width: 33%;
+}
+
+.footer-container-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 1px solid $c-fondo;
+  border-left: 1px solid $c-fondo;
+  &-facebook{
+    width: fit-content;
+  }
+  &-instagram{
+    width: fit-content;
+  }
+  &-whatsapp{
+    width: fit-content;
+  }
+}

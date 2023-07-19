@@ -1,0 +1,56 @@
+
+/* --------Whatsapp help styles ----------*/
+
+.whatsapp {
+  position: fixed;
+  width: 10%;
+  bottom: 10px;
+  right: 10px;
+  &-expand{
+    display: none;
+    &-chat{
+      display: table;
+      font-family: sans-serif;
+      text-decoration: none;
+      margin: 1em auto;
+      color: #fff;
+      font-size: 0.9em;
+      padding: 1em 2em 1em 3.5em;
+      border-radius: 2em;
+      font-weight: bold;
+      background: #25d366
+      url('https://tochat.be/click-to-chat-directory/css/whatsapp.svg') no-repeat 1.5em center;
+      background-size: 1.6em;
+    }
+  }
+  &-logo{
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px){
+  .whatsapp {
+    position: fixed;
+    width: 5%;
+    bottom: 10px;
+    right: 10px;
+    &-logo{
+      width: 100%;
+    }
+    &-expand{
+      position: inherit;
+      right: 10px;
+      bottom: 0;
+      display: none;
+      font-size: 0.8em;
+    }
+    &:hover{
+      .whatsapp-expand{
+        display: block;
+      }
+      .whatsapp-logo {
+        display: none;
+      }
+    }
+  }
+}
