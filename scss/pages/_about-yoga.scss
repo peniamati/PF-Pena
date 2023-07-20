@@ -1,13 +1,11 @@
 /* --------About Yoga styles ----------*/
 
 .introduccion {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  @include contenedor-flex(row);
   text-align: center;
   &-h2{
     width: 100%;
+    font-family: $f-title;
   }
   &-article{
     width: 80%;
@@ -23,10 +21,7 @@
 }
 
 .kids {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  @include contenedor-flex(row);
   text-align: center;
   &-h2{
     width: 100%;
@@ -45,10 +40,7 @@
 }
 
 .benefits {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  @include contenedor-flex(row);
   text-align: center;
   &-h2{
     width: 100%;
@@ -72,17 +64,13 @@
 
 @media (min-width: 768px){
   .introduccion {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    padding: 1rem;
-    padding-bottom: 0;
+    @include contenedor-grid;
     &-h2{
       grid-column: span 2;
     }
     &-article{
       grid-column: span 2;
-      display: inline-flex;
+      @include inline-flex(0);
       justify-self: center;
       align-items: center;
       &-p-container{
@@ -96,17 +84,13 @@
   }
 
   .kids {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    padding: 1rem;
-    padding-bottom: 0;
+    @include contenedor-grid;
     &-h2{
       grid-column: span 2;
     }
     &-article{
+      @include inline-flex(0);
       grid-column: span 2;
-      display: inline-flex;
       justify-self: center;
       align-items: center;
       &-p-container{

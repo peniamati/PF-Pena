@@ -1,14 +1,12 @@
 /* --------ContactMe styles ----------*/
 
 .formulario {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  @include contenedor-flex(row);
   text-align: center;
   &-h2{
     text-align: center;
     width: 100%;
+    font-family: $f-title;
   }
   &-img{
     display: none;
@@ -21,10 +19,7 @@
 }
 
 .mapa {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  @include contenedor-flex(row);
   text-align: center;
   &-h2{
     width: 100%;
@@ -40,10 +35,7 @@
 }
 
 .redes-sociales {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  @include contenedor-flex(row);
   text-align: center;
   &-h2{
     width: 100%;
@@ -69,12 +61,9 @@ button{
 
 @media (min-width: 768px){
   .formulario {
-    text-align: start;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
+    @include contenedor-grid;
     align-items: center;
-    padding: 1rem;
+    text-align: start;
     width: 100%;
     &-h2{
       grid-column: span 2;
@@ -97,11 +86,8 @@ button{
   }
 
   .redes-sociales {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 1rem;
+    @include contenedor-grid;
     align-items: center;
-    justify-content: center;
     &-h2{
       grid-column: span 2;
     }

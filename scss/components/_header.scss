@@ -1,7 +1,5 @@
 header {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  @include contenedor-flex;
   align-items: center;
   background-color: $c-fondo;
   & a{
@@ -36,16 +34,13 @@ header {
 
 @media (min-width: 768px){
   header {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    @include contenedor-flex(row);
     background-color: $c-fondo;
     justify-content: space-evenly;
   }
 
   .header-container-logo-izq {
-    display: inline-flex;
-    padding: 2rem;
+    @include inline-flex;
     &-img{
       animation: iniciar-left 3s ease-in-out;
     }
@@ -56,12 +51,11 @@ header {
   }
 
   .header-container-logo-der {
-    padding: 2rem;
-    display: inline-flex;
+    @include inline-flex;
   }
 
   .header-container-logo-der-img {
-    display: inline-flex;
+    @include inline-flex(0);
     width: 100px;
     height: 100px;
     animation: iniciar-right 3s ease-in-out;

@@ -1,6 +1,7 @@
 $c-fondo: #ffe0e9;
 $c-fondo-alt: black;
 $f-family: Calibri, Arial, Helvetica, sans-serif;
+$f-title: Brush Script MT;
 
 * {
   margin: 0;
@@ -20,4 +21,24 @@ a {
   main {
     padding: 1rem;
   }
+}
+
+@mixin contenedor-flex($direccion:column, $justify:center){
+  display: flex;
+  flex-direction: $direccion ;
+  flex-wrap: wrap;
+  justify-content: $justify;
+}
+
+@mixin contenedor-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  padding: 1rem;
+  padding-bottom: 0;
+}
+
+@mixin inline-flex($padding:2rem){
+  display: inline-flex;
+  padding: $padding;
 }

@@ -1,24 +1,23 @@
 /* -------- Index styles ----------*/
 
 .welcome {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  @include contenedor-flex(row);
   text-align: center;
   &-h2{
     justify-self: center;
     margin-top: 1rem;
     font-size: 2rem;
-    font-family: Brush Script MT, Arial, Helvetica, sans-serif;
+    font-family: $f-title;
   }
   &-intro{
     width: 80%;
     &-img{
-      width: 100%;    
+      width: 100%; 
+      max-width: 300px;   
       animation: iniciar 3s ease forwards; 
       &-right{
         width: 100%;
+        max-width: 300px;
         animation: iniciar 3s ease forwards;
       }
     }
@@ -30,24 +29,20 @@
 }
 
 .agend {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  @include contenedor-flex;
   text-align: center;
+  align-items: center;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
   &-container-calendar{
     position: relative;
-    padding-bottom: 100%;
+    width: 300px;
+    height: 300px;
     margin-bottom: 1rem;
     &-calendar{
-      position: absolute;
-      top: 0;
-      left: 0;
       width: 100%;
       height: 100%;
-      border: none; /* Remove the iframe border */
     }
   }
   &-date-button{
@@ -56,21 +51,13 @@
   }
 }
 
-td #timezone {
-  height: 0;
-  overflow: hidden;
-}
 
 @media (min-width: 768px){
   .welcome {
+    @include contenedor-grid;
     text-align: start;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    padding: 1rem;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 0;
     &-h2{
       margin-top: 0;
       grid-column: span 2;
@@ -87,12 +74,16 @@ td #timezone {
         transform-origin: right top;
         &:hover{
           transform: scale(1.1);
+          max-width: 400px;
+          cursor: pointer;
         }
         &-right{
           display: block;
           transform-origin: left;      
           &:hover{
+            max-width: 400px;
             transform: scale(1.1);
+            cursor: pointer;
           }
         }
       }
@@ -104,6 +95,7 @@ td #timezone {
       }     
       &>p{
         margin: 1rem;
+        width: 100%;
       }
     }
   }
@@ -111,16 +103,19 @@ td #timezone {
   .agend {
     width: 80%;
     text-align: start;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 1rem;
+    @include contenedor-grid;
     &-h2{
       grid-column: span 2;
       justify-self: center;
     }
+    &-container-calendar{
+      position: relative;
+      width: 400px;
+      height: 400px;
+      margin-bottom: 1rem;
+    }
     &-date{
-      display: flex;
-      flex-wrap: wrap;
+      @include contenedor-flex;
       text-align: center;
       align-items: center;
       align-content: center;

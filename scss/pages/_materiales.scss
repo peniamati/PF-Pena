@@ -1,16 +1,13 @@
 /* --------Materiales styles ----------*/
 
 .recursos {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  @include contenedor-flex(row);
   text-align: center;
   &-h2{
     justify-self: center;
     margin-top: 1rem;
     font-size: 2rem;
-    font-family: Brush Script MT, Arial, Helvetica, sans-serif;
+    font-family: $f-title;
   }
   &-article{
     width: 80%;
@@ -30,10 +27,7 @@
 }
 
 .videos {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  @include contenedor-flex(row);
   text-align: center;
   &-video{
     width: 100%;
@@ -43,10 +37,7 @@
 }
 
 .aside {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  @include contenedor-flex(row);
   text-align: center;
   &-spotify{
     width: 80%;
@@ -58,33 +49,25 @@
 
 @media (min-width: 768px){
   .recursos{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    padding-bottom: 0;
+    @include contenedor-grid;
     margin-left: auto;
     margin-right: auto;
     &-h2{
       grid-column: span 2;
-      margin-bottom: 1 rem;
+      margin-bottom: 1rem;
     }
     &-article{
-      justify-self: center;
-      &-p:last-of-type{
-        text-align: start;
-        font-size: 1.5rem;
-      }
+      align-self: center;
+    }
+    &-conclusion{
+      grid-column: span 2;
+      font-family: $f-title;
+      font-size: 1.5rem;
     }
   }
 
   .videos{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    padding: 1rem;
-    padding-bottom: 0;
+    @include contenedor-grid;
     &-h3{
       grid-column: span 2;
     }
