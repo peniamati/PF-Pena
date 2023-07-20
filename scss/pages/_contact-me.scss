@@ -83,11 +83,13 @@ button{
 
   .container-formulario {
     width: 80%;
+    animation: iniciar-left 3s ease-in-out;
   }
 
   .formulario-img {
     display: inline;
     width: 50%;
+    animation: iniciar-right 3s ease-in-out;
     &-container{
       width: 100%;
       text-align: center;

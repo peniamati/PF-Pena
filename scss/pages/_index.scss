@@ -15,10 +15,11 @@
   &-intro{
     width: 80%;
     &-img{
-      width: 100%;
-      animation: flip 4s;
+      width: 100%;    
+      animation: iniciar 3s ease forwards; 
       &-right{
         width: 100%;
+        animation: iniciar 3s ease forwards;
       }
     }
     &-right{
@@ -83,14 +84,24 @@ td #timezone {
       margin-bottom: 1rem;
       width: 80%;
       &-img{
-        width: 100%;
-      }
-      &-mobile{
-        display: none;
+        transform-origin: right top;
+        &:hover{
+          transform: scale(1.1);
+        }
+        &-right{
+          display: block;
+          transform-origin: left;      
+          &:hover{
+            transform: scale(1.1);
+          }
+        }
       }
       &-right{
         display: block;
       }
+      &-mobile{
+        display: none;
+      }     
       &>p{
         margin: 1rem;
       }

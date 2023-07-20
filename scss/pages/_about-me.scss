@@ -14,8 +14,10 @@
     margin-bottom: 1rem;
     &-img{
       width: 100%;
+      animation: iniciar 3s ease forwards;
       &-mobile{
         width: 100%;
+        animation: iniciar 3s ease forwards;
       }
       &-right{
         display: none;
@@ -43,12 +45,14 @@
       justify-self: center;
       &-img{
         width: 100%;
+        animation: iniciar-left 3s ease forwards;
         &-mobile{
           display: none;
         }
         &-right{
           display: block;
           width: 100%;
+          animation: iniciar-right 3s ease forwards;
         }
       }
       &-p{

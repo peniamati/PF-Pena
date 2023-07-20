@@ -22,7 +22,7 @@ header {
 .header-container-h1 {
   vertical-align: middle;
   font-size: 1.8rem;
-  font-family: Brush Script MT, Arial, Helvetica, sans-serif;
+  font-family: Brush Script MT;
 }
 
 .header-container-logo-izq {
@@ -30,6 +30,7 @@ header {
 }
 
 .header-container-logo-izq-img {
+  animation: iniciar-down 3s ease-in-out;
   width: 100px;
 }
 
@@ -45,6 +46,9 @@ header {
   .header-container-logo-izq {
     display: inline-flex;
     padding: 2rem;
+    &-img{
+      animation: iniciar-left 3s ease-in-out;
+    }
   }
 
   .header-container-h1 {
@@ -60,5 +64,6 @@ header {
     display: inline-flex;
     width: 100px;
     height: 100px;
+    animation: iniciar-right 3s ease-in-out;
   }
 }

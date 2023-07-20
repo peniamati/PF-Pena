@@ -17,6 +17,7 @@
     &-img{
       width: 100%;
       margin-bottom: 1rem;
+      animation: iniciar 3s ease-in-out;
     }
     &-ul{
       padding: 0;
@@ -37,6 +38,7 @@
   &-video{
     width: 100%;
     margin-bottom: 1rem;
+    animation: iniciar 3s ease-in-out;
   }
 }
 

@@ -17,6 +17,7 @@
     &-img{
       width: 100%;
       margin-bottom: 1rem;
+      animation: iniciar 3s ease forwards;
     }
   }
 }
@@ -38,6 +39,7 @@
     &-img{
       width: 100%;
       margin-bottom: 1rem;
+      animation: iniciar 3s ease forwards;
     }
   }
 }
@@ -63,6 +65,7 @@
     &-img{
       width: 100%;
       margin-bottom: 1rem;
+      animation: butterfly-fly 3s;
     }
   }
 }
@@ -86,6 +89,9 @@
         width: 100%;
         margin: 1rem;
       }
+      &-img{
+        animation: iniciar-right 3s ease-in-out;
+      }
     }
   }
 
@@ -106,6 +112,9 @@
       &-p-container{
         margin: 1rem;
         width: 100%;
+      }
+      &-img{
+        animation: iniciar-right 3s ease-in-out;
       }
     }
   }
