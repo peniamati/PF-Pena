@@ -272,14 +272,9 @@ footer li a:hover {
   border-right: 1px solid #ffe0e9;
   border-left: 1px solid #ffe0e9;
 }
-.footer-a-facebook {
-  width: fit-content;
-}
-.footer-a-instagram {
-  width: fit-content;
-}
-.footer-a-whatsapp {
-  width: fit-content;
+.footer-a p {
+  color: #ffe0e9;
+  margin-bottom: 0;
 }
 
 /* -------- Index styles ----------*/
@@ -607,6 +602,7 @@ footer li a:hover {
 }
 .introduccion-article-img {
   width: 100%;
+  max-width: 400px;
   margin-bottom: 1rem;
   animation: iniciar 3s ease forwards;
 }
@@ -629,6 +625,7 @@ footer li a:hover {
 }
 .kids-article-img {
   width: 100%;
+  max-width: 400px;
   margin-bottom: 1rem;
   animation: iniciar 3s ease forwards;
 }
@@ -654,7 +651,8 @@ footer li a:hover {
   width: 100%;
 }
 .benefits-article-img {
-  width: 100%;
+  width: auto;
+  max-height: 300px;
   margin-bottom: 1rem;
   animation: butterfly-fly 3s;
 }

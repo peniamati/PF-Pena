@@ -45,13 +45,8 @@ footer {
   align-items: center;
   border-right: 1px solid $c-fondo;
   border-left: 1px solid $c-fondo;
-  &-facebook{
-    width: fit-content;
-  }
-  &-instagram{
-    width: fit-content;
-  }
-  &-whatsapp{
-    width: fit-content;
+  & p{
+    color: $c-fondo;
+    margin-bottom: 0;
   }
 }
