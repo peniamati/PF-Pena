@@ -2,11 +2,10 @@
 
 footer {
   width: 100%;
-  margin-top: 10px;
+  margin-top: 1em;
   @include contenedor-flex(row, space-evenly);
   background-color: $c-fondo-alt;
   align-items: center;
-  text-align: center;
   border-top: 1px solid black;
   & li a{
     color: $c-fondo;
@@ -17,31 +16,23 @@ footer {
   }
 }
 
-.footer-container {
-  margin-top: 10px;
-}
-
-.footer-logo {
-  width: 33%;
-  height: 70%;
-}
-
 .footer-logo-img {
   width: 100px;
 }
 
-.footer-container,
+.footer-nav{
+  @include contenedor-flex(column);
+  align-items: center;
+  & ul{
+    list-style: none;
+    padding: 0;
+    margin:0;
+  }
+}
+
 .footer-a {
+  @include contenedor-flex(column);
   width: 33%;
-}
-
-.footer-container-nav ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-a {
-  @include contenedor-flex;
   align-items: center;
   border-right: 1px solid $c-fondo;
   border-left: 1px solid $c-fondo;

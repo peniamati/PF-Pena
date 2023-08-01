@@ -1,13 +1,13 @@
 /* --------Galeria styles ----------*/
 
 .galery {
-  @include contenedor-flex(row);
-  text-align: center;
+  @include contenedor-flex;
   &-introduccion{
     text-align: center;
     width: 80%;
   }
   &-h2{
+    margin-top: 10px;
     font-family: $f-title;
   }
   &-photos-img{
@@ -15,7 +15,7 @@
     max-width: 300px;
     align-self: center;
     &-container{
-      @include contenedor-flex;
+      @include contenedor-flex(column);
       width: 80%;
       justify-content: center; 
       max-width: 400px;

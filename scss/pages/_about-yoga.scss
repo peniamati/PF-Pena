@@ -1,10 +1,10 @@
 /* --------About Yoga styles ----------*/
 
 .introduccion {
-  @include contenedor-flex(row);
-  text-align: center;
+  @include contenedor-flex;
   &-h2{
     width: 100%;
+    margin-top: 10px;
     font-family: $f-title;
   }
   &-article{
@@ -22,8 +22,7 @@
 }
 
 .kids {
-  @include contenedor-flex(row);
-  text-align: center;
+  @include contenedor-flex;
   &-h2{
     width: 100%;
   }
@@ -42,8 +41,8 @@
 }
 
 .benefits {
-  @include contenedor-flex(row);
-  text-align: center;
+  @include contenedor-flex;
+  
   &-h2{
     width: 100%;
   }

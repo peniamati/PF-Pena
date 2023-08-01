@@ -1,9 +1,9 @@
 /* --------About Me styles ----------*/
 
 .presentacion {
-  @include contenedor-flex(row);
-  text-align: center;
+  @include contenedor-flex;
   &-h2{
+    margin-top: 10px;
     width: 100%;
   }
   &-article{

@@ -23,11 +23,12 @@ a {
   }
 }
 
-@mixin contenedor-flex($direccion:column, $justify:center){
+@mixin contenedor-flex($direccion:row, $justify:center, $align:center){
   display: flex;
   flex-direction: $direccion ;
   flex-wrap: wrap;
   justify-content: $justify;
+  text-align: $align;
 }
 
 @mixin contenedor-grid{

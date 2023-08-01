@@ -1,10 +1,10 @@
 /* --------ContactMe styles ----------*/
 
 .formulario {
-  @include contenedor-flex(row);
-  text-align: center;
+  @include contenedor-flex();
   &-h2{
     text-align: center;
+    margin-top: 10px;
     width: 100%;
     font-family: $f-title;
   }
@@ -19,8 +19,7 @@
 }
 
 .mapa {
-  @include contenedor-flex(row);
-  text-align: center;
+  @include contenedor-flex();
   &-h2{
     width: 100%;
   }
@@ -35,13 +34,13 @@
 }
 
 .redes-sociales {
-  @include contenedor-flex(row);
-  text-align: center;
+  @include contenedor-flex();
   &-h2{
     width: 100%;
   }
   &-div{
     width: 80%;
+    max-width: 400px;
     margin-bottom: 1rem;
   }
 }
@@ -52,6 +51,7 @@
 }
 
 .instagram-media {
+  max-width: 300px;
   width: 100%;
 }
 

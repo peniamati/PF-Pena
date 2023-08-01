@@ -1,11 +1,10 @@
 /* -------- Index styles ----------*/
 
 .welcome {
-  @include contenedor-flex(row);
-  text-align: center;
+  @include contenedor-flex;
   &-h2{
     justify-self: center;
-    margin-top: 1rem;
+    margin-top: 10px;
     font-size: 2rem;
     font-family: $f-title;
   }
@@ -30,11 +29,13 @@
 
 .agend {
   @include contenedor-flex;
-  text-align: center;
   align-items: center;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+  &-h2{
+    width: 100%;
+  }
   &-container-calendar{
     position: relative;
     width: 300px;
@@ -55,21 +56,18 @@
 @media (min-width: 768px){
   .welcome {
     @include contenedor-grid;
-    text-align: start;
-    margin-left: auto;
-    margin-right: auto;
     &-h2{
       margin-top: 0;
       grid-column: span 2;
       text-align: center;
     }
     &-intro{
-      justify-self: center;
+      justify-content: center;
       align-items: center;
       display: inline-flex;
       grid-column: span 2;
       margin-bottom: 1rem;
-      width: 80%;
+      width: 100%;
       &-img{
         transform-origin: right top;
         &:hover{
@@ -95,18 +93,17 @@
       }     
       &>p{
         margin: 1rem;
-        width: 100%;
+        width: 50%;
       }
     }
   }
 
   .agend {
-    width: 80%;
-    text-align: start;
+    width: 100%;
     @include contenedor-grid;
     &-h2{
       grid-column: span 2;
-      justify-self: center;
+      text-align: center;
     }
     &-container-calendar{
       position: relative;
@@ -115,17 +112,10 @@
       margin-bottom: 1rem;
     }
     &-date{
-      @include contenedor-flex;
-      text-align: center;
+      @include contenedor-flex(column);
       align-items: center;
       align-content: center;
       padding: 1rem;
-      &-selector{
-        margin-left: 1rem;
-        align-self: center;
-        text-align: center;
-        width: 100%;
-      }
       &-button{
         width: 100%;
         text-align: center;

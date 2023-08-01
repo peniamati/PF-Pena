@@ -1,11 +1,10 @@
 /* --------Materiales styles ----------*/
 
 .recursos {
-  @include contenedor-flex(row);
-  text-align: center;
+  @include contenedor-flex;
   &-h2{
     justify-self: center;
-    margin-top: 1rem;
+    margin-top: 10px;
     font-size: 2rem;
     font-family: $f-title;
   }
@@ -27,8 +26,7 @@
 }
 
 .videos {
-  @include contenedor-flex(row);
-  text-align: center;
+  @include contenedor-flex;
   &-video{
     width: 100%;
     margin-bottom: 1rem;
@@ -37,8 +35,7 @@
 }
 
 .aside {
-  @include contenedor-flex(row);
-  text-align: center;
+  @include contenedor-flex;
   &-spotify{
     width: 80%;
     &-iframe{
@@ -50,14 +47,13 @@
 @media (min-width: 768px){
   .recursos{
     @include contenedor-grid;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
     &-h2{
       grid-column: span 2;
       margin-bottom: 1rem;
     }
     &-article{
-      align-self: center;
+      justify-self: center;
     }
     &-conclusion{
       grid-column: span 2;

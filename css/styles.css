@@ -80,9 +80,10 @@ button:hover {
 
 header {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  text-align: center;
   align-items: center;
   background-color: #ffe0e9;
 }
@@ -99,10 +100,11 @@ header a {
   vertical-align: middle;
   font-size: 1.8rem;
   font-family: Brush Script MT;
+  padding: 0.5em;
 }
 
 .header-container-logo-izq {
-  padding: 2rem;
+  padding: 2em;
 }
 
 .header-container-logo-izq-img {
@@ -116,6 +118,7 @@ header a {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    text-align: center;
     background-color: #ffe0e9;
     justify-content: space-evenly;
   }
@@ -168,7 +171,6 @@ header a {
 /* --------Whatsapp help styles ----------*/
 .whatsapp {
   position: fixed;
-  width: 10%;
   bottom: 10px;
   right: 10px;
   max-width: 40px;
@@ -222,14 +224,14 @@ header a {
 /* -------- Footer styles ----------*/
 footer {
   width: 100%;
-  margin-top: 10px;
+  margin-top: 1em;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  text-align: center;
   background-color: black;
   align-items: center;
-  text-align: center;
   border-top: 1px solid black;
 }
 footer li a {
@@ -240,27 +242,22 @@ footer li a:hover {
   color: black;
 }
 
-.footer-container {
-  margin-top: 10px;
-}
-
-.footer-logo {
-  width: 33%;
-  height: 70%;
-}
-
 .footer-logo-img {
   width: 100px;
 }
 
-.footer-container,
-.footer-a {
-  width: 33%;
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
-
-.footer-container-nav ul {
+.footer-nav ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .footer-a {
@@ -268,6 +265,8 @@ footer li a:hover {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
+  text-align: center;
+  width: 33%;
   align-items: center;
   border-right: 1px solid #ffe0e9;
   border-left: 1px solid #ffe0e9;
@@ -287,7 +286,7 @@ footer li a:hover {
 }
 .welcome-h2 {
   justify-self: center;
-  margin-top: 1rem;
+  margin-top: 10px;
   font-size: 2rem;
   font-family: Brush Script MT;
 }
@@ -310,7 +309,7 @@ footer li a:hover {
 
 .agend {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
@@ -318,6 +317,9 @@ footer li a:hover {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+}
+.agend-h2 {
+  width: 100%;
 }
 .agend-container-calendar {
   position: relative;
@@ -341,9 +343,6 @@ footer li a:hover {
     justify-content: center;
     padding: 1rem;
     padding-bottom: 0;
-    text-align: start;
-    margin-left: auto;
-    margin-right: auto;
   }
   .welcome-h2 {
     margin-top: 0;
@@ -351,12 +350,12 @@ footer li a:hover {
     text-align: center;
   }
   .welcome-intro {
-    justify-self: center;
+    justify-content: center;
     align-items: center;
     display: inline-flex;
     grid-column: span 2;
     margin-bottom: 1rem;
-    width: 80%;
+    width: 100%;
   }
   .welcome-intro-img {
     transform-origin: right top;
@@ -383,11 +382,10 @@ footer li a:hover {
   }
   .welcome-intro > p {
     margin: 1rem;
-    width: 100%;
+    width: 50%;
   }
   .agend {
-    width: 80%;
-    text-align: start;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
@@ -396,7 +394,7 @@ footer li a:hover {
   }
   .agend-h2 {
     grid-column: span 2;
-    justify-self: center;
+    text-align: center;
   }
   .agend-container-calendar {
     position: relative;
@@ -413,12 +411,6 @@ footer li a:hover {
     align-items: center;
     align-content: center;
     padding: 1rem;
-  }
-  .agend-date-selector {
-    margin-left: 1rem;
-    align-self: center;
-    text-align: center;
-    width: 100%;
   }
   .agend-date-button {
     width: 100%;
@@ -439,6 +431,7 @@ footer li a:hover {
   width: 80%;
 }
 .galery-h2 {
+  margin-top: 10px;
   font-family: Brush Script MT;
 }
 .galery-photos-img {
@@ -451,6 +444,7 @@ footer li a:hover {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
+  text-align: center;
   width: 80%;
   justify-content: center;
   max-width: 400px;
@@ -513,6 +507,7 @@ footer li a:hover {
   text-align: center;
 }
 .presentacion-h2 {
+  margin-top: 10px;
   width: 100%;
 }
 .presentacion-article {
@@ -592,6 +587,7 @@ footer li a:hover {
 }
 .introduccion-h2 {
   width: 100%;
+  margin-top: 10px;
   font-family: Brush Script MT;
 }
 .introduccion-article {
@@ -739,7 +735,7 @@ footer li a:hover {
 }
 .recursos-h2 {
   justify-self: center;
-  margin-top: 1rem;
+  margin-top: 10px;
   font-size: 2rem;
   font-family: Brush Script MT;
 }
@@ -793,15 +789,14 @@ footer li a:hover {
     justify-content: center;
     padding: 1rem;
     padding-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
   }
   .recursos-h2 {
     grid-column: span 2;
     margin-bottom: 1rem;
   }
   .recursos-article {
-    align-self: center;
+    justify-self: center;
   }
   .recursos-conclusion {
     grid-column: span 2;
@@ -837,6 +832,7 @@ footer li a:hover {
 }
 .formulario-h2 {
   text-align: center;
+  margin-top: 10px;
   width: 100%;
   font-family: Brush Script MT;
 }
@@ -880,6 +876,7 @@ footer li a:hover {
 }
 .redes-sociales-div {
   width: 80%;
+  max-width: 400px;
   margin-bottom: 1rem;
 }
 
@@ -889,6 +886,7 @@ footer li a:hover {
 }
 
 .instagram-media {
+  max-width: 300px;
   width: 100%;
 }
 
