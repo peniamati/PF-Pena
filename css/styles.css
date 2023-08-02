@@ -396,9 +396,8 @@ footer li a:hover {
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
-    text-align: start;
     padding: 1em;
-    padding-right: 2em;
+    width: 80%;
   }
   .agend-date-button {
     width: 100%;

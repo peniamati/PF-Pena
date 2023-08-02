@@ -107,9 +107,8 @@
     }
     &-date{
       @include contenedor-flex(column);
-      text-align: start;
       padding: 1em;
-      padding-right: 2em;
+      width: 80%;
       &-button{
         width: 100%;
         text-align: center;
