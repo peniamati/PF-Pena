@@ -374,11 +374,11 @@ footer li a:hover {
     width: 50%;
   }
   .agend {
-    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     padding-bottom: 0;
+    width: 100%;
   }
   .agend-h2 {
     grid-column: span 2;
@@ -395,6 +395,7 @@ footer li a:hover {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
+    text-align: center;
     text-align: center;
     padding: 1em;
   }

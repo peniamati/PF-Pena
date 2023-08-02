@@ -93,8 +93,8 @@
   }
 
   .agend {
-    width: 100%;
     @include contenedor-grid;
+    width: 100%;
     &-h2{
       grid-column: span 2;
       text-align: center;
@@ -107,6 +107,7 @@
     }
     &-date{
       @include contenedor-flex(column);
+      text-align: center;
       padding: 1em;
       &-button{
         width: 100%;
