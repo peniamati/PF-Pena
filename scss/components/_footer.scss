@@ -1,4 +1,4 @@
-/* -------- Footer styles ----------*/
+// -------- Footer styles ----------
 
 footer {
   width: 100%;
@@ -7,37 +7,37 @@ footer {
   background-color: $c-fondo-alt;
   align-items: center;
   border-top: 1px solid black;
-  & li a{
+  & li a {
     color: $c-fondo;
-    &:hover{
+    &:hover {
       background-color: $c-fondo;
       color: black;
     }
   }
 }
 
-.footer-logo-img {
-  width: 100px;
-}
-
-.footer-nav{
-  @include contenedor-flex(column);
-  align-items: center;
-  & ul{
-    list-style: none;
-    padding: 0;
-    margin:0;
+.footer {
+  &-nav {
+    @include contenedor-flex(column);
+    align-items: center;
+    & ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
   }
-}
-
-.footer-a {
-  @include contenedor-flex(column);
-  width: 33%;
-  align-items: center;
-  border-right: 1px solid $c-fondo;
-  border-left: 1px solid $c-fondo;
-  & p{
-    color: $c-fondo;
-    margin-bottom: 0;
+  &-a {
+    @include contenedor-flex(column);
+    width: 33%;
+    align-items: center;
+    border-right: 1px solid $c-fondo;
+    border-left: 1px solid $c-fondo;
+    & p {
+      color: $c-fondo;
+      margin-bottom: 0;
+    }
+  }
+  &-logo-img {
+    width: 100px;
   }
 }

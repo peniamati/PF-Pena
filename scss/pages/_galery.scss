@@ -4,23 +4,21 @@
   @include contenedor-flex;
   &-introduccion{
     text-align: center;
+    font-size: 1.5rem;
     width: 80%;
   }
   &-h2{
-    margin-top: 10px;
-    font-family: $f-title;
+    @include h2;
   }
   &-photos-img{
-    width: 100%;
-    max-width: 300px;
+    @include img;
     align-self: center;
     &-container{
       @include contenedor-flex(column);
       width: 80%;
-      justify-content: center; 
       max-width: 400px;
       height: 300px;
-      margin-bottom: 1rem;
+      margin-bottom: 1em;
       animation: iniciar 3s ease forwards;
       border: 10px solid black;
       overflow: hidden;
@@ -31,10 +29,10 @@
       cursor: pointer;
     }
   }
-  &-videos-container{
+  &-video{
     width: 80%;
   }
-  &-videos-iframe{
+  &-video-iframe{
     width: 100%;
     animation: iniciar 3s ease forwards;
   }
@@ -42,14 +40,9 @@
 
 @media (min-width: 768px){
   .galery {
-    text-align: start;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    padding: 1rem;
+    @include contenedor-grid;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 0;
     &-introduccion{
       grid-column: span 2;
       justify-self: center;
@@ -61,13 +54,14 @@
     &-photos-img-container{
       display: inline-flex;
       width: 100%;
-      padding: 2rem;
+      padding: 2em;
       justify-self: center;
     }
-    &-videos-container{
+    &-video{
       display: inline-flex;
       width: 100%;
-      margin-bottom: 1rem;
+      padding: 2em;
+      margin-bottom: 1em;
     }
   }
 }

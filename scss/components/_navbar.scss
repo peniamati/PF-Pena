@@ -3,22 +3,19 @@
 .navbar {
   width: 100%;
   text-align: center;
+  &-brand img{
+    animation: iniciar-left 3s ease-in-out;
+  }
 }
 
 .nav-logo-right {
   display: none;
 }
 
-.navbar-brand img{
-  animation: iniciar-left 3s ease-in-out;
-}
-
 .nav-link.active:hover{
   background-color: $c-fondo;
   color: $c-fondo-alt;
 }
-
-
 
 @media (min-width: 768px){
   .nav-logo-right {

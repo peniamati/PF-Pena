@@ -1,3 +1,5 @@
+// -------- Header styles ----------
+
 header {
   @include contenedor-flex;
   align-items: center;
@@ -12,25 +14,23 @@ header {
   }
 }
 
-/* -------- Header styles ----------*/
-.header-container-logo-der {
-  display: none;
-}
-
-.header-container-h1 {
-  vertical-align: middle;
-  font-size: 1.8rem;
-  font-family: Brush Script MT;
-  padding: 0.5em;
-}
-
-.header-container-logo-izq {
-  padding: 2em;
-}
-
-.header-container-logo-izq-img {
-  animation: iniciar-down 3s ease-in-out;
-  width: 100px;
+.header{
+  &-h1{
+    vertical-align: middle;
+    font-size: 1.8rem;
+    font-family: Brush Script MT;
+    padding: 0.5em;
+  }
+  &-logo-izq{
+    padding: 2em;
+    &-img{
+      animation: iniciar-down 3s ease-in-out;
+      width: 100px;
+    }
+  }
+  &-logo-der-img{
+    display: none;
+  }
 }
 
 @media (min-width: 768px){
@@ -40,25 +40,24 @@ header {
     justify-content: space-evenly;
   }
 
-  .header-container-logo-izq {
-    @include inline-flex;
-    &-img{
-      animation: iniciar-left 3s ease-in-out;
+  .header{
+    &-h1{
+      display: inline-flex;
     }
-  }
-
-  .header-container-h1 {
-    display: inline-flex;
-  }
-
-  .header-container-logo-der {
-    @include inline-flex;
-  }
-
-  .header-container-logo-der-img {
-    @include inline-flex(0);
-    width: 100px;
-    height: 100px;
-    animation: iniciar-right 3s ease-in-out;
+    &-logo-izq{
+      @include inline-flex;
+      &-img{
+        animation: iniciar-left 3s ease-in-out;
+      }
+    }
+    &-logo-der{
+      @include inline-flex;
+      &-img{
+        @include inline-flex(0);
+        width: 100px;
+        height: 100px;
+        animation: iniciar-right 3s ease-in-out;
+      }
+    }
   }
 }

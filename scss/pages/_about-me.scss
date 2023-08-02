@@ -1,21 +1,18 @@
-/* --------About Me styles ----------*/
+// --------About Me styles ----------
 
 .presentacion {
   @include contenedor-flex;
   &-h2{
-    margin-top: 10px;
-    width: 100%;
+    @include h2;
   }
   &-article{
     width: 80%;
-    margin-bottom: 1rem;
+    margin-bottom: 1em;
     &-img{
-      width: 100%;
+      @include img;
       animation: iniciar 3s ease forwards;
-      max-width: 300px;
       &-mobile{
-        width: 100%;
-        max-width: 300px;
+        @include img;
         animation: iniciar 3s ease forwards;
       }
       &-right{
@@ -61,7 +58,7 @@
         }
       }
       &-p{
-        margin: 1rem;
+        margin: 1em;
       }
     }
     &-saludo{
