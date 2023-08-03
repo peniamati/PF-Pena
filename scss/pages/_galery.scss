@@ -1,6 +1,6 @@
 /* --------Galeria styles ----------*/
 
-.galery {
+.photos {
   @include contenedor-flex;
   &-introduccion{
     text-align: center;
@@ -10,7 +10,7 @@
   &-h2{
     @include h2;
   }
-  &-photos-img{
+  &-img{
     @include img;
     align-self: center;
     &-container{
@@ -24,10 +24,13 @@
       overflow: hidden;
       background-color: rgb(184, 153, 107);
     }
-    &:hover{
-      transform: scale(1.2);
-      cursor: pointer;
-    }
+  }
+}
+
+.videos{
+  @include contenedor-flex;
+  &-h2{
+    justify-self: center;
   }
   &-video{
     width: 80%;
@@ -43,10 +46,9 @@
 }
 
 @media (min-width: 768px){
-  .galery {
+  .photos {
     @include contenedor-grid;
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: space-between;
     &-introduccion{
       grid-column: span 2;
       justify-self: center;
@@ -55,16 +57,27 @@
       grid-column: span 2;
       text-align: center;
     }
-    &-photos-img-container{
+    &-img:hover{
+      transform: scale(1.2);
+      cursor: pointer;
+    }
+    &-img-container{
       display: inline-flex;
-      width: 100%;
-      padding: 2em;
+      width: 90%;
+      padding: 1em;
       justify-self: center;
     }
+  }
+  .videos{
+    @include contenedor-grid;
+    &-h2{
+      grid-column: span 2;
+      text-align: center;
+    }
     &-video{
-      padding: 2em;
+      // padding: 2em;
       display: inline-flex;
-      width: 100%;
+      width: 80%;
       margin-bottom: 0;
     }
   }

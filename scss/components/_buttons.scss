@@ -4,7 +4,10 @@ button{
   background-color: $c-fondo-alt;
   color: $c-fondo;
   border: 0;
-  &:hover{
+}
+
+@media (min-width:768px){
+  button:hover{
     background-color: $c-fondo;
     color: $c-fondo-alt;
   }
