@@ -36,9 +36,13 @@
     width: 100%;
   }
   &-article{
-    width: 80%;
+    width: 100%;
     max-width: 400px;
     margin-bottom: 1em;
+    overflow: hidden;
+    &:last-of-type{
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -85,11 +89,16 @@ button{
     &-article{
       width: 100%;
       justify-self: center;
+      margin-bottom: 0;
+      &:first-of-type{
+        margin-right: 1em;
+      }
     }
   }
 
   .facebook-iframe {
     width: 400px;
+    margin-right: 1em;
   }
   
   .instagram-media {

@@ -36,7 +36,6 @@
 
 .benefits {
   @include contenedor-flex;
-  
   &-h2{
     width: 100%;
   }
@@ -58,6 +57,7 @@
     &-p-final{
       font-family: $f-title;
       font-size: 2rem;
+      background-color: wheat;
     }
   }
 }

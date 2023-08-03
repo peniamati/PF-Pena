@@ -24,10 +24,6 @@
 
 .agend {
   @include contenedor-flex;
-  align-items: center;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
   &-h2{
     width: 100%;
   }
@@ -40,9 +36,12 @@
       height: 100%;
     }
   }
-  &-date-button{
-    justify-self: center;
-    margin-top: 1em;
+  &-date{
+    width: 80%;
+    &-button{
+      justify-self: center;
+      margin-top: 1em;
+    }
   }
 }
 
@@ -56,24 +55,24 @@
       text-align: center;
     }
     &-intro{
+      justify-self: center;
       justify-content: center;
       align-items: center;
       display: inline-flex;
       grid-column: span 2;
       margin-bottom: 1em;
-      width: 100%;
       &-img{
         transform-origin: right top;
         &:hover{
           transform: scale(1.1);
-          max-width: 400px;
+          max-width: 500px;
           cursor: pointer;
         }
         &-right{
           display: block;
           transform-origin: left;      
           &:hover{
-            max-width: 400px;
+            max-width: 500px;
             transform: scale(1.1);
             cursor: pointer;
           }
@@ -94,26 +93,19 @@
 
   .agend {
     @include contenedor-grid;
-    width: 100%;
     &-h2{
       grid-column: span 2;
       text-align: center;
     }
     &-container-calendar{
-      margin-left: auto;
-      margin-right: auto;
+      justify-self: end;
+      margin-bottom: 0;
       width: 400px;
       height: 400px;
     }
     &-date{
       @include contenedor-flex(column);
-      padding: 1em;
-      width: 80%;
-      &-button{
-        width: 100%;
-        text-align: center;
-        margin-bottom: 1em;
-      }
+      margin-left: 2em;
     }
   }
 

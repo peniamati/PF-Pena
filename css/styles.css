@@ -139,7 +139,6 @@ header a {
     animation: iniciar-right 3s ease-in-out;
   }
 }
-/* --------NavBar styles ----------*/
 .navbar {
   width: 100%;
   text-align: center;
@@ -172,40 +171,29 @@ header a {
 .whatsapp-expand {
   display: none;
 }
-.whatsapp-expand-chat {
-  display: table;
-  height: 40px;
-  font-family: Calibri, Arial, Helvetica, sans-serif;
-  text-decoration: none;
-  margin: 1em auto;
-  color: #fff;
-  font-size: 0.9em;
-  padding: 1em 2em 1em 3.5em;
-  border-radius: 2em;
-  font-weight: bold;
-  background: #25d366 url("https://tochat.be/click-to-chat-directory/css/whatsapp.svg") no-repeat 1.5em center;
-  background-size: 1.6em;
-}
 .whatsapp-logo {
   width: 100%;
 }
 
 @media (min-width: 768px) {
-  .whatsapp {
-    position: fixed;
-    width: 5%;
-    bottom: 10px;
-    right: 10px;
-  }
   .whatsapp-logo {
     width: 100%;
   }
   .whatsapp-expand {
+    height: 40px;
+    font-family: Calibri, Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    margin: 1em auto;
+    color: #fff;
+    font-size: 0.9em;
+    padding: 1em 2em 1em 3.5em;
+    border-radius: 2em;
+    font-weight: bold;
+    background: #25d366 url("https://tochat.be/click-to-chat-directory/css/whatsapp.svg") no-repeat 1.5em center;
+    background-size: 1.6em;
     position: inherit;
-    right: 10px;
+    right: 5px;
     bottom: 0;
-    display: none;
-    font-size: 0.8em;
   }
   .whatsapp:hover .whatsapp-expand {
     display: block;
@@ -216,7 +204,6 @@ header a {
 }
 footer {
   width: 100%;
-  margin-top: 1em;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -262,7 +249,7 @@ footer li a:hover {
   color: #ffe0e9;
   margin-bottom: 0;
 }
-.footer-logo-img {
+.footer-logo {
   width: 100px;
 }
 
@@ -304,10 +291,6 @@ footer li a:hover {
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
-  align-items: center;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
 }
 .agend-h2 {
   width: 100%;
@@ -320,6 +303,9 @@ footer li a:hover {
 .agend-container-calendar-calendar {
   width: 100%;
   height: 100%;
+}
+.agend-date {
+  width: 80%;
 }
 .agend-date-button {
   justify-self: center;
@@ -339,19 +325,19 @@ footer li a:hover {
     text-align: center;
   }
   .welcome-intro {
+    justify-self: center;
     justify-content: center;
     align-items: center;
     display: inline-flex;
     grid-column: span 2;
     margin-bottom: 1em;
-    width: 100%;
   }
   .welcome-intro-img {
     transform-origin: right top;
   }
   .welcome-intro-img:hover {
     transform: scale(1.1);
-    max-width: 400px;
+    max-width: 500px;
     cursor: pointer;
   }
   .welcome-intro-img-right {
@@ -359,7 +345,7 @@ footer li a:hover {
     transform-origin: left;
   }
   .welcome-intro-img-right:hover {
-    max-width: 400px;
+    max-width: 500px;
     transform: scale(1.1);
     cursor: pointer;
   }
@@ -378,15 +364,14 @@ footer li a:hover {
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     padding-bottom: 0;
-    width: 100%;
   }
   .agend-h2 {
     grid-column: span 2;
     text-align: center;
   }
   .agend-container-calendar {
-    margin-left: auto;
-    margin-right: auto;
+    justify-self: end;
+    margin-bottom: 0;
     width: 400px;
     height: 400px;
   }
@@ -396,13 +381,7 @@ footer li a:hover {
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
-    padding: 1em;
-    width: 80%;
-  }
-  .agend-date-button {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 1em;
+    margin-left: 2em;
   }
 }
 /* --------Galeria styles ----------*/
@@ -451,6 +430,10 @@ footer li a:hover {
 }
 .galery-video {
   width: 80%;
+  margin-bottom: 2em;
+}
+.galery-video:last-of-type {
+  margin-bottom: 0;
 }
 .galery-video-iframe {
   width: 100%;
@@ -481,10 +464,10 @@ footer li a:hover {
     justify-self: center;
   }
   .galery-video {
+    padding: 2em;
     display: inline-flex;
     width: 100%;
-    padding: 2em;
-    margin-bottom: 1em;
+    margin-bottom: 0;
   }
 }
 .presentacion {
@@ -566,6 +549,8 @@ footer li a:hover {
   }
   .presentacion-saludo {
     grid-column: span 2;
+    margin: 0;
+    font-size: 2rem;
   }
 }
 .introduccion {
@@ -646,6 +631,7 @@ footer li a:hover {
 .benefits-article-p-final {
   font-family: Brush Script MT;
   font-size: 2rem;
+  background-color: wheat;
 }
 
 @media (min-width: 768px) {
@@ -747,6 +733,12 @@ footer li a:hover {
   list-style: decimal;
   text-align: start;
 }
+.recursos-conclusion {
+  background-color: wheat;
+  font-family: Brush Script MT;
+  font-size: 1.7rem;
+  width: 90%;
+}
 
 .videos {
   display: flex;
@@ -756,8 +748,12 @@ footer li a:hover {
   text-align: center;
 }
 .videos-video {
-  width: 100%;
+  width: 80%;
   margin-bottom: 1em;
+}
+.videos-video-iframe {
+  height: 400px;
+  width: 100%;
   animation: iniciar 3s ease-in-out;
 }
 
@@ -767,6 +763,7 @@ footer li a:hover {
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
+  padding: 1em;
 }
 .aside-spotify {
   width: 80%;
@@ -791,9 +788,8 @@ footer li a:hover {
     justify-self: center;
   }
   .recursos-conclusion {
+    justify-self: center;
     grid-column: span 2;
-    font-family: Brush Script MT;
-    font-size: 1.5rem;
   }
   .videos {
     display: grid;
@@ -807,10 +803,10 @@ footer li a:hover {
   .videos-video {
     justify-self: center;
     width: 80%;
+    margin-bottom: 0;
   }
-  .videos-video-iframe {
-    height: 300px;
-    width: 100%;
+  .aside-spotify {
+    width: 90%;
   }
 }
 .formulario {
@@ -865,9 +861,13 @@ footer li a:hover {
   width: 100%;
 }
 .redes-sociales-article {
-  width: 80%;
+  width: 100%;
   max-width: 400px;
   margin-bottom: 1em;
+  overflow: hidden;
+}
+.redes-sociales-article:last-of-type {
+  margin-bottom: 0;
 }
 
 .facebook-iframe {
@@ -918,9 +918,14 @@ button {
   .redes-sociales-article {
     width: 100%;
     justify-self: center;
+    margin-bottom: 0;
+  }
+  .redes-sociales-article:first-of-type {
+    margin-right: 1em;
   }
   .facebook-iframe {
     width: 400px;
+    margin-right: 1em;
   }
   .instagram-media {
     width: 400px;

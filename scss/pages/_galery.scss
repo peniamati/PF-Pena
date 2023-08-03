@@ -31,6 +31,10 @@
   }
   &-video{
     width: 80%;
+    margin-bottom: 2em;
+    &:last-of-type{
+      margin-bottom: 0;
+    }
   }
   &-video-iframe{
     width: 100%;
@@ -58,10 +62,10 @@
       justify-self: center;
     }
     &-video{
+      padding: 2em;
       display: inline-flex;
       width: 100%;
-      padding: 2em;
-      margin-bottom: 1em;
+      margin-bottom: 0;
     }
   }
 }

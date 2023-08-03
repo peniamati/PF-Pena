@@ -19,19 +19,30 @@
       }
     }
   }
+  &-conclusion{
+    background-color: wheat;
+    font-family: $f-title;
+    font-size: 1.7rem;
+    width: 90%;
+  }
 }
 
 .videos {
   @include contenedor-flex;
   &-video{
-    width: 100%;
+    width: 80%;
     margin-bottom: 1em;
-    animation: iniciar 3s ease-in-out;
+  }
+  &-video-iframe{
+    height: 400px;
+    width: 100%;
+    animation: iniciar 3s ease-in-out;;
   }
 }
 
 .aside {
   @include contenedor-flex;
+  padding: 1em;
   &-spotify{
     width: 80%;
     &-iframe{
@@ -52,9 +63,8 @@
       justify-self: center;
     }
     &-conclusion{
+      justify-self: center;
       grid-column: span 2;
-      font-family: $f-title;
-      font-size: 1.5rem;
     }
   }
 
@@ -66,11 +76,13 @@
     &-video{
       justify-self: center;
       width: 80%;
-      &-iframe{
-        height: 300px;
-        width: 100%;
-      }
+      margin-bottom: 0;
     }
   }
 
+  .aside{
+    &-spotify{
+      width: 90%;
+    }
+  }
 }

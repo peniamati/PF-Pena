@@ -2,7 +2,6 @@
 
 footer {
   width: 100%;
-  margin-top: 1em;
   @include contenedor-flex(row, space-evenly);
   background-color: $c-fondo-alt;
   align-items: center;
@@ -37,7 +36,7 @@ footer {
       margin-bottom: 0;
     }
   }
-  &-logo-img {
+  &-logo{
     width: 100px;
   }
 }
