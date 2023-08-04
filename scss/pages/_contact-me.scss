@@ -1,23 +1,32 @@
 // --------Contact Me styles ----------
 
 .formulario {
-  @include contenedor-flex();
+  @include contenedor-flex;
   &-h2{
     @include h2;
+    width: 80%;
+    text-align: center;
   }
   &-img{
     display: none;
   }
+  &-container{
+    width: 80%;
+    max-width: 250px;
+    text-align: end;
+    &-label{
+      margin-bottom: 1em;
+    }
+  }
 }
 
-.container-formulario-label {
-  margin-bottom: 1em;
-  text-align: end;
-}
 
 .mapa {
-  @include contenedor-flex();
+  @include contenedor-flex;
   &-h2{
+    width: 100%;
+  }
+  &-iframe{
     width: 100%;
   }
 }
@@ -26,18 +35,14 @@
   width: 100%;
 }
 
-.mapa-iframe {
-  width: 100%;
-}
-
 .redes-sociales {
-  @include contenedor-flex();
+  @include contenedor-flex;
   &-h2{
     width: 100%;
   }
   &-article{
     width: 100%;
-    max-width: 400px;
+    max-width: 380px;
     margin-bottom: 1em;
     overflow: hidden;
     &:last-of-type{
@@ -73,35 +78,25 @@ button{
       justify-self: center;
       animation: iniciar-right 3s ease-in-out;
     }
-  }
-
-  .container-formulario {
-    width: 80%;
-    animation: iniciar-left 3s ease-in-out;
+    &-container{
+      width: 80%;
+      max-width: none;
+      animation: iniciar-left 3s ease-in-out;
+    }
   }
 
   .redes-sociales {
-    @include contenedor-grid();
+    @include contenedor-grid;
     align-items: center;
     &-h2{
       grid-column: span 2;
     }
     &-article{
-      width: 100%;
       justify-self: center;
       margin-bottom: 0;
-      &:first-of-type{
-        margin-right: 1em;
+      &:last-of-type{
+        padding-left: 1em;
       }
     }
-  }
-
-  .facebook-iframe {
-    width: 400px;
-    margin-right: 1em;
-  }
-  
-  .instagram-media {
-    width: 400px;
   }
 }

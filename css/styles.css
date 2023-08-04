@@ -97,6 +97,7 @@ header a {
   font-size: 1.8rem;
   font-family: Brush Script MT;
   padding: 0.5em;
+  margin-bottom: 0;
 }
 .header-logo-izq {
   padding: 2em;
@@ -850,14 +851,19 @@ footer li a:hover {
   margin-top: 10px;
   font-size: 2rem;
   font-family: Brush Script MT;
+  width: 80%;
+  text-align: center;
 }
 .formulario-img {
   display: none;
 }
-
-.container-formulario-label {
-  margin-bottom: 1em;
+.formulario-container {
+  width: 80%;
+  max-width: 250px;
   text-align: end;
+}
+.formulario-container-label {
+  margin-bottom: 1em;
 }
 
 .mapa {
@@ -870,12 +876,11 @@ footer li a:hover {
 .mapa-h2 {
   width: 100%;
 }
-
-.container-mapa-iframe {
+.mapa-iframe {
   width: 100%;
 }
 
-.mapa-iframe {
+.container-mapa-iframe {
   width: 100%;
 }
 
@@ -891,7 +896,7 @@ footer li a:hover {
 }
 .redes-sociales-article {
   width: 100%;
-  max-width: 400px;
+  max-width: 380px;
   margin-bottom: 1em;
   overflow: hidden;
 }
@@ -930,8 +935,9 @@ button {
     justify-self: center;
     animation: iniciar-right 3s ease-in-out;
   }
-  .container-formulario {
+  .formulario-container {
     width: 80%;
+    max-width: none;
     animation: iniciar-left 3s ease-in-out;
   }
   .redes-sociales {
@@ -945,19 +951,11 @@ button {
     grid-column: span 2;
   }
   .redes-sociales-article {
-    width: 100%;
     justify-self: center;
     margin-bottom: 0;
   }
-  .redes-sociales-article:first-of-type {
-    margin-right: 1em;
-  }
-  .facebook-iframe {
-    width: 400px;
-    margin-right: 1em;
-  }
-  .instagram-media {
-    width: 400px;
+  .redes-sociales-article:last-of-type {
+    padding-left: 1em;
   }
 }
 
